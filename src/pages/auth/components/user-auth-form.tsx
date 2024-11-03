@@ -79,12 +79,6 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
                 <FormItem className='space-y-1'>
                   <div className='flex items-center justify-between'>
                     <FormLabel>Password</FormLabel>
-                    <Link
-                      to='/forgot-password'
-                      className='text-sm font-medium text-muted-foreground hover:opacity-75'
-                    >
-                      Forgot password?
-                    </Link>
                   </div>
                   <FormControl>
                     <PasswordInput placeholder='********' {...field} />
@@ -94,12 +88,8 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
               )}
             />
             <Button className='mt-2' loading={isLoading}>
-            ingresar
+              ingresar
             </Button>
-
-
-
-
           </div>
         </form>
       </Form>
